@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚡ Sistem Akademik — Project 8
+# ⚡ Sistem Akademik Project 8
 
 **Project 8 · Laravel 12 + Fortify**
 
@@ -17,10 +17,10 @@ Ini adalah versi framework dari project sebelumnya. Routing memakai `routes/web.
 ## 📸 Tampilan
 
 <table>
-  <tr>
-    <td width="50%"><img src="docs/screenshots/01-beranda.png" alt="Halaman Awal"><br><sub>Halaman Awal</sub></td>
-    <td width="50%"><img src="docs/screenshots/02-login.png" alt="Login Fortify"><br><sub>Login Fortify</sub></td>
-  </tr>
+ <tr>
+ <td width="50%"><img src="docs/screenshots/01-beranda.png" alt="Halaman Awal"><br><sub>Halaman Awal</sub></td>
+ <td width="50%"><img src="docs/screenshots/02-login.png" alt="Login Fortify"><br><sub>Login Fortify</sub></td>
+ </tr>
 </table>
 
 ## ✨ Fitur
@@ -48,16 +48,16 @@ Ini adalah versi framework dari project sebelumnya. Routing memakai `routes/web.
 
 ```mermaid
 flowchart TD
-    A[Browser] --> B[routes/web.php]
-    B --> C[auth middleware]
-    C --> D[LoginController - Fortify]
-    D --> E[User - Eloquent]
-    E --> F[(pbwl_samples_8)]
-    C --> G[Mahasiswa / Dosen / Matakuliah Controller]
-    G --> H[Model Eloquent]
-    H --> F
-    G --> I[Blade view]
-    I --> A
+ A[Browser] --> B[routes/web.php]
+ B --> C[auth middleware]
+ C --> D[LoginController - Fortify]
+ D --> E[User - Eloquent]
+ E --> F[(pbwl_samples_8)]
+ C --> G[Mahasiswa / Dosen / Matakuliah Controller]
+ G --> H[Model Eloquent]
+ H --> F
+ G --> I[Blade view]
+ I --> A
 ```
 
 ## 🚀 Instalasi
@@ -66,10 +66,10 @@ flowchart TD
 2. Database `pbwl_samples_8` sudah dibuat; jalankan migrasi: `php artisan migrate --force`.
 3. **Apache di mesin ini masih PHP 8.0**, jadi jalankan lewat server bawaan Laravel:
 
-   ```bash
-   cd D:\XAMPP\htdocs\project8
-   D:\XAMPP\php83\php.exe artisan serve --host=127.0.0.1 --port=8000
-   ```
+ ```bash
+ cd D:\XAMPP\htdocs\project8
+ D:\XAMPP\php83\php.exe artisan serve --host=127.0.0.1 --port=8000
+ ```
 
 4. Buka **http://127.0.0.1:8000/**.
 
@@ -81,18 +81,18 @@ flowchart TD
 ```
 project8/
 ├── app/
-│   ├── Actions/Fortify/   # 5 action Fortify
-│   ├── Http/Controllers/  # Dashboard, Mahasiswa, Dosen, Matakuliah
-│   ├── Models/            # User, Mahasiswa, ...
-│   └── Providers/FortifyServiceProvider.php
+│ ├── Actions/Fortify/ # 5 action Fortify
+│ ├── Http/Controllers/ # Dashboard, Mahasiswa, Dosen, Matakuliah
+│ ├── Models/ # User, Mahasiswa, ...
+│ └── Providers/FortifyServiceProvider.php
 ├── bootstrap/
-├── config/                # fortify.php, auth.php, database.php
+├── config/ # fortify.php, auth.php, database.php
 ├── database/
-│   ├── migrations/        # users, cache, jobs, 2FA, passkeys, mahasiswa
-│   ├── factories/
-│   └── seeders/
-├── public/                # index.php (document root)
-├── resources/views/       # Blade
+│ ├── migrations/ # users, cache, jobs, 2FA, passkeys, mahasiswa
+│ ├── factories/
+│ └── seeders/
+├── public/ # index.php (document root)
+├── resources/views/ # Blade
 ├── routes/
 ├── storage/
 ├── tests/
