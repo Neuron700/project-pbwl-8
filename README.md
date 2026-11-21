@@ -10,8 +10,6 @@ Sistem Akademik dalam **Laravel 12** dengan autentikasi **Fortify** (login, 2FA,
 
 </div>
 
----
-
 ## 📖 Deskripsi
 
 Ini adalah versi framework dari project sebelumnya. Routing memakai `routes/web.php`, data diakses lewat Eloquent (`Mahasiswa`, `Dosen`, `Matakuliah`, `User`), migrasi sudah termasuk tabel two-factor dan passkey. Fortify menangani login, reset password, konfirmasi password, 2FA, dan passkey.
